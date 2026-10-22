@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Эмир Босс — Школьный помощник</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #17100a; overflow: hidden; }
+  #splash {
+    position: fixed; inset: 0; z-index: 1;
+    display: flex; flex-direction: column; gap: 12px;
+    align-items: center; justify-content: center;
+    color: #f5e8d5; font-family: system-ui, sans-serif;
+    text-align: center; padding: 20px;
+  }
+  #splash .logo { font-size: 26px; font-weight: 900; }
+  #splash .logo span { color: #ffb84d; }
+  iframe.app { position: fixed; inset: 0; z-index: 2; width: 100%; height: 100dvh; border: 0; background: #fff; }
+</style>
+</head>
+<body>
+  <div id="splash">
+    <div class="logo">👔 Эмир <span>Босс</span> — Школьный помощник</div>
+    <div>Загружаю помощника…</div>
+  </div>
+  <iframe class="app" src="https://null.perchance.org/emir-boss" title="Эмир Босс — Школьный помощник" allow="clipboard-read; clipboard-write" onload="document.getElementById('splash').style.display='none'"></iframe>
+</body>
+</html>
